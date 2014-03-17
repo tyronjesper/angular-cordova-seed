@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        
+		<!-- STYLESHEETS -->
+		<link rel="stylesheet" type="text/css" href="css/app.css" />
+        
+		<title>Hello World</title>
+    </head>
+    <body ng-controller="mainController">
+        <!-- APP-WIDE COMPONENTS LIKE NAV DRAWER -->
+		
+		<div class="app" ng-hide="angularready" >
+			<h1>Cordova Hello World</h1>
+			<div id="deviceready" class="blink">
+				<p class="event listening">Bootstrapping Angular</p>
+			</div>
+		</div>
+		
+		<!-- NG-VIEW FOR ROUTING -->
+		<!-- UI-STATE CAN BE USED INSTEAD OF NG-VIEW, IT PROVIDES MORE FUNCTIONALITY -->
+		<div ng-view></div>
+		
+		
+        <!-- INCLUDE CORDOVA JS IN FIRST PLACE -->    
+		<script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+    
+		<!-- ANGULAR JS -->
+		<script type="text/javascript" src="js/vendor/angular/angular.min.js"></script>
+		<script type="text/javascript" src="js/vendor/angular/angular-resource.min.js"></script>
+		<script type="text/javascript" src="js/vendor/angular/angular-cookies.min.js"></script>
+		<script type="text/javascript" src="js/vendor/angular/angular-sanitize.min.js"></script>
+		<script type="text/javascript" src="js/vendor/angular/angular-route.min.js"></script>
+		<script type="text/javascript" src="js/vendor/angular/angular-animate.min.js"></script>
+		
+		<!-- VENDOR JS -->
+		<script type="text/javascript" src="js/vendor/gestures.min.js"></script>
+		<script type="text/javascript" src="js/vendor/snap.min.js"></script>
+		
+		<!-- APPLICATION JS -->
+		<script type="text/javascript" src="js/app.js"></script>
+		
+		<script type="text/javascript" src="js/hello/controller.js"></script>
+		<script type="text/javascript" src="js/hello/service.js"></script>
+
+		<!-- MANUALLY BOOTSTRAP ANGULAR AFTER CORDOVA DEVICE READY EVENT -->
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="org.tj.angular.cordova" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>angular-cordova-seed</name>
+    <description>
+        Angular & Cordova ready seed project.
+    </description>
+    <author email="cem.ozer.cse@gmail.com" href="https://github.com/tyronjesper/">
+        Cem Ozer - TyronJesper
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+</widget>
