@@ -1,7 +1,8 @@
 angular-cordova-seed
 ====================
 
-Naked Cordova application backed with AngularJS. Includes just core things.
+Naked Cordova application backed with AngularJS. This project contains just core things for a ready to go project.
+
 
 To run application with node.js do the followings:
 
@@ -37,3 +38,5 @@ To run application with node.js do the followings:
    ```
    cordova emulate android
    ```
+
+After you run, you must see a page showing an angular ready message. At startup application waits for cordova deviceready event then manually bootstraps angular application so you don't need to worry about deviceready when making cordova api calls.
